@@ -1,0 +1,11 @@
+--- 
+- name: "{{ tenant.name | upper }} | create directories for assets"
+  file:
+    path: "{{ asset_dest }}"
+    state: directory     
+    
+- name: "{{ tenant.name | upper }} | install catalog assets"
+  unarchive:
+    src: "{{ catalog.assets.src }}"
+    dest: "{{ asset_dest }}"
+    remote_src: "{{ catalog.assets.remote_src | default('no') }}"
