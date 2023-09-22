@@ -1,0 +1,22 @@
+---
+catalog_web_home: /app
+catalog_web_assets_home: "{{ catalog_web_home }}/assets"
+
+
+catalog_directories: [
+  "{{ catalog_web_home }}",
+  "{{ catalog_web_assets_home }}"
+]  
+ 
+tenants: []  
+#  - name: tenant
+#    catalog: 
+#      - version: 8.2.1
+#        catalog:
+#          template: tenant/catalog-8.2.1.json
+#          remote_src: true
+#        templates:
+#          src: "{{ app_version }}/tenant/tailoringexpert-tenant-templates-0.0.5-SNAPSHOT-templates.zip"
+#          dest: "{{ app_template }}/tenant/"  
+#          remote_src: no  
+

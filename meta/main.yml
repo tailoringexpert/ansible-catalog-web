@@ -1,0 +1,16 @@
+---
+galaxy_info:
+  role_name: "tailoringexpert-catalog-web"
+  author: 
+    - "Michael Bädorf"
+  description: "Role of installing tenant web catalog assets"
+  license: "Apache-2.0"
+  min_ansible_version: "2.5"
+  repository : "https://github.com/tailoringexpert/ansible-catalog-web"
+
+  platforms:
+
+  galaxy_tags:
+
+
+dependencies: []
